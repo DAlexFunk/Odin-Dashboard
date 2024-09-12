@@ -61,14 +61,14 @@
             <label for="searchBox" class="material-symbols-outlined" id="search">search</label>
             <input type="text" id="searchBox">
             <span class="material-symbols-outlined" id="notifications">notifications</span>
-            <img src="./assets/profilePic.jpg" alt="Profile Picture for Senator Bail Organa">
-            <span>Senator Bail Organa</span>
+            <img src="./assets/heraProfilePic.jpeg" alt="Profile Picture for General Hera Syndulla">
+            <span>General Hera Syndulla</span>
         </div>
         <div class="bottomRow">
-            <img src="./assets/profilePic.jpg" alt="Profile Picture for Senator Bail Organa">
+            <img src="./assets/heraProfilePic.jpeg" alt="Profile Picture for General Hera Syndulla">
             <div id="helloText">
                 <p id="topText">Hello there,</p>
-                <p id="nameText">Senator Bail Organa (@organabail)</p>
+                <p id="nameText">General Hera Syndulla (@generalsyndulla)</p>
             </div>
             <button id="newButton">New</button>
             <button id="uploadbutton">Upload</button>
@@ -78,20 +78,112 @@
     <div class="main">
         <div id="projects">
             <div class="title">Your Projects</div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <h5>Destroy the Empire</h5>
+                <p>Destroy the Empire by any <em>diplomatic</em> means necessary. We will not stoop to the brutality of the Empire or that of Saw Gerrera. 
+                   Come up with new ways to fight the empire.</p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Restore the Jedi Order</h5>
+                <p>The Jedi Order was destroyed by Emperor Palpatine and the Clone Army at the end of the Clone Wars. 
+                   To ensure peace and the fall of the Empire, the Jedi Order needs to be restored with the help of Luke Skywalker.</p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Build new Ships</h5>
+                <p>The Imperial Fleet is vastly superior to ours. If we are to survive this civil war, we need new ships. 
+                   Ships we need to make include: fighters, bombers, stealth, torpedo, etc.</p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Recruit new Troops</h5>
+                <p>The basis of any resistance is its army. Without good men the army is bound to fail.
+                   We need new recruits. However, these recruits need to be selected secretly as to not comprimise the intregity of the of the rebellion. 
+                </p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Find a new Base</h5>
+                <p>After the destruction of the Death Star, the Empire is aware of our base on Yavin 4. In order to secure the future of the rebellion,
+                   a new home base needs to be found. The planet needs to be remote and somewhere the Empire will never look.
+                </p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Find Ezra Bridger</h5>
+                <p>In a heroic sacrafice, Jedi Padawan Ezra Bridger saved Lothal from Imperial Liberation by taking himself and Grand Admiral Thrawn away somewhere in the galaxy. 
+                   He is lost. He must be found and recognized for his sacrifice and help and gain the opprutinity fight the Empire.
+                </p>
+                <div class="icons">
+                    <span class="material-symbols-outlined" id="favorite">heart_plus</span>
+                    <span class="material-symbols-outlined" id="eye">visibility</span>
+                    <span class="material-symbols-outlined" id="share">send</span>
+                </div>
+            </div>
         </div>
+
         <div id="announcements">
             <div class="title">Announcements</div>
-            <div id="announcementsBox"></div>
+            <div id="announcementsBox">
+                <h4>Death Star Destroyed!</h4>
+                <p>After a long battle (and many close calls), the Imperial Death Star has been destroyed!</p>
+                <hr>
+                <h4>Obi-Wan Dead?</h4>
+                <p>During the rescue of Princess Leia Organa from the grip of the Empire, Jedi Master Obi-Wan Kenobi was killed by the fearsome Dath Vader.
+                    However, no trace of his body was found.
+                </p>
+                <hr>
+                <h4>Imperial Senate Dissolved</h4>
+                <p>In a shocking move by Emperor Palpatine, the Imperial Senate has been dissolved giving the Emperor full power over the Empire.</p>
+            </div>
         </div>
+
         <div id="trending">
             <div class="title">Trending</div>
-            <div id="trendingBox"></div>
+            <div id="trendingBox">
+                <div id="person1" class="person">
+                    <img src="./assets/leiaProfilePic.jpeg" alt="Profile Picture for Princess Leia" class="profilePic">
+                    <span>
+                        <span>@princessleia</span>
+                        <p>Ambassador for Alderaan</p>
+                    </span>
+                </div>
+                <div id="person2" class="person">
+                    <img src="./assets/lukeProfilePic.jpeg" alt="Profile Picture for Princess Leia" class="profilePic">
+                    <span>
+                        <span>@luke01</span>
+                        <p>Farmboy/Pilot/Jedi in Training</p>
+                    </span>
+                </div>
+                <div id="person3" class="person">
+                    <img src="./assets/mothmaProfilePic.jpeg" alt="Profile Picture for Princess Leia" class="profilePic">
+                    <span>
+                        <span>@rebelfounder999</span>
+                        <p>Imperial Senator/Rebellion Founder</p>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

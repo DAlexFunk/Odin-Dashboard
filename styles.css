@@ -147,6 +147,7 @@ img#logo {
 }
 
 .main #projects {
+    grid-area: 1 / 1 / 3 / 2;
     padding: 10px;
     display: grid;
     grid-template: 10px 1fr 1fr / repeat(3, minmax(200px, 1fr));
@@ -158,10 +159,20 @@ img#logo {
 }
 
 #projects .card {
+    box-sizing: border-box;
     background-color: #f8f9fa;
     border-radius: 10px;
     border-left: 11px solid #003459;
     box-shadow: 1px 1px 1px 0 rgba(100,100,100,0.75);
+    padding: 24px 12px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.card .icons {
+    margin-top: auto;
+    align-self: flex-end;
 }
 
 .main #announcements,
@@ -173,17 +184,58 @@ img#logo {
 }
 
 .main #announcementsBox,
-#trending #trendingBox {
+.main #trendingBox {
     background-color: #f8f9fa;
     flex: 1;
+    padding: 10px;
     border-radius: 16px;
     box-shadow: 1px 1px 1px 0 rgba(100,100,100,0.75);
 }
 
-.main #projects {
-    grid-area: 1 / 1 / 3 / 2;
+.main #announcementsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: auto;
 }
 
-.main div {
-    /* border: 2px solid black; */
+.main #trendingBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 32px;
+}
+
+hr {
+    min-width: 90%;
+}
+
+h4,
+h5, 
+.main p {
+    margin: 0;
+}
+
+.main p {
+    font-size: 12px;
+    color: #555;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.profilePic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
